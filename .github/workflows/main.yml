@@ -33,11 +33,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: $ {{  always()  }}
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2 '
-
       - name: Deploy Application
         run: 
           echo "Deploying application..."
